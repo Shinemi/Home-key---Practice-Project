@@ -33,16 +33,18 @@
             
             <div class="flex" id="research">
                 <span id="search-logo"><i class="fa-solid fa-location-dot"></i></span>
-                <input type="text" value="Madrid, Spain" placeholder="City, Country" id="search-input">
+                <form action="#">
+                    <input type="text" value="Madrid, Spain" placeholder="City, Country" id="search-input">
+                </form>
                 <input type="submit" value="Search" id="search-btn">
             </div>
 
             <div class="flex" id="filterDiv">
                 <p class="bold" id="filtersP">Filters</p>
-                <button class="filterBTN"><span class="red"><i class="fa-solid fa-water"></i></span>Sea</button>
-                <button class="filterBTN"><span class="red"><i class="fa-solid fa-tree"></i></span>Nature</button>
-                <button class="filterBTN"><span class="red"><i class="fa-solid fa-mountain"></i></span>Mountains</button>
-                <button class="filterBTN"><span class="red"><i class="fa-solid fa-city"></i></span></i>Cities</button>
+                <button class="filterBTN"><i class="fa-solid fa-water"></i>Sea</button>
+                <button class="filterBTN"><i class="fa-solid fa-tree"></i>Nature</button>
+                <button class="filterBTN"><i class="fa-solid fa-mountain"></i>Mountains</button>
+                <button class="filterBTN"><i class="fa-solid fa-city"></i></i>Cities</button>
             </div>
 
             <p><span class="red"><i class="fa-solid fa-circle-info"></i></span> More than 500 accomodations in this city</p> 
@@ -51,177 +53,237 @@
         
         <section id="accomodations" class="flex">
 
-            <article>
+            <div>
                 <h2>Accomodations in Madrid</h2>
                 <div class="flex">
-                    <a class="accomodationsWidget">
-                        <img src="./img/accomodation/Retiro-Park.jpg" alt="Retiro-Park">
+                    <article class="accomodationsWidget">
+                        <a href="#">
+                            <img src="./img/accomodation/Retiro-Park.jpg" alt="Retiro-Park">
                         
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Retiro Park</h3>
-                                <p>Stay from $40/night</p>
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Retiro Park</h3>
+                                    <p>Stay from $40/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="accomodationsWidget">
-                        <img src="./img/accomodation/Royal-Palace-of-Madrid.jpg" alt="Royal-Palace-of-Madrid">
+                        </a>
                         
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Royal Palace of Madrid</h3>
-                                <p>Stay from $46/night</p>
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="accomodationsWidget">
-                        <img src="./img/accomodation/Puerta-del-Sol.jpg" alt="Puerta-del-Sol">
+                    </article>
+                    <article class="accomodationsWidget">
+                        <a href="#">
+                          <img src="./img/accomodation/Royal-Palace-of-Madrid.jpg" alt="Royal-Palace-of-Madrid">
                         
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Puerta del Sol</h3>
-                                <p>Stay from $52/night</p>
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span>
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Royal Palace of Madrid</h3>
+                                    <p>Stay from $46/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span>
+                                </div>
                             </div>  
-                        </div>
+                        </a>
                         
-                    </a>
-                    <a class="accomodationsWidget">
-                        <img src="./img/accomodation/Plaza-Mayor.jpg" alt="Plaza-Mayor">
+                    </article>
+                    <article class="accomodationsWidget">
+                        <a href="#">
+                            <img src="./img/accomodation/Puerta-del-Sol.jpg" alt="Puerta-del-Sol">
                         
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Plaza Mayor</h3>
-                                <p>Stay from $55/night</p>
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Puerta del Sol</h3>
+                                    <p>Stay from $52/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span>
+                                </div>  
                             </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="accomodationsWidget"> 
-                        <img src="./img/accomodation/Prado-Museum.jpg" alt="Prado-Museum">
+                        </a>
                         
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Prado Museum</h3>
-                                <p>Stay from $61/night</p>
+                        
+                    </article>
+                    <article class="accomodationsWidget">
+                        <a href="#">
+                             <img src="./img/accomodation/Plaza-Mayor.jpg" alt="Plaza-Mayor">
+                        
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Plaza Mayor</h3>
+                                    <p>Stay from $55/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span></i>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span></i>
+                        </a>
+                       
+                    </article>
+                    <article class="accomodationsWidget"> 
+                        <a href="#">
+                             <img src="./img/accomodation/Prado-Museum.jpg" alt="Prado-Museum">
+                        
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Prado Museum</h3>
+                                    <p>Stay from $61/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span></i>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a class="accomodationsWidget">
-                        <img src="./img/accomodation/Gran-Vía.jpg" alt="Gran-Vía">
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Gran Vía</h3>
-                                <p>Stay from $68/night</p>
+                        </a>
+                       
+                    </article>
+                    <article class="accomodationsWidget">
+                        <a href="#">
+                            <img src="./img/accomodation/Gran-Vía.jpg" alt="Gran-Vía">
+
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Gran Vía</h3>
+                                    <p>Stay from $68/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                        
+                    </article>
 
                 </div>                    
                 <span class="flex bold" id="loadMore">
                     <a href="#" >Load more</a>
                 </span>
-            </article>
+            </div>
 
             <aside>
                 <h2>Most popular accomodations</h2>
                 <div class="flex-down asideWidget">
-                    <a class="accomodationsWidget flex">
-                        <img src="./img/accomodation/Retiro-Park.jpg" class="accommodationRightImg" alt="Retiro-Park">
+                    <article class="accomodationsWidget ">
+                        <a href="#" class="flex">
+                            <img src="./img/accomodation/Retiro-Park.jpg" class="accommodationRightImg" alt="Retiro-Park">
                         
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Retiro Park</h3>
-                                <p>Stay from $40/night</p>
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Retiro Park</h3>
+                                    <p>Stay from $40/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="accomodationsWidget flex">
-                        <img src="./img/accomodation/Royal-Palace-of-Madrid.jpg" class="accommodationRightImg" alt="Royal-Palace-of-Madrid">
+                        </a>
                         
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Royal Palace of Madrid</h3>
-                                <p>Stay from $46/night</p>
+                    </article>
+                    <article class="accomodationsWidget ">
+                        <a href="#" class="flex">
+                             <img src="./img/accomodation/Royal-Palace-of-Madrid.jpg" class="accommodationRightImg" alt="Royal-Palace-of-Madrid">
+                        
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Royal Palace of Madrid</h3>
+                                    <p>Stay from $46/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span>
+                        </a>
+                       
+                    </article>
+                    <article class="accomodationsWidget ">
+                        <a href="#" class="flex">
+                            <img src="./img/accomodation/Gran-Vía.jpg" class="accommodationRightImg" alt="Gran-Vía">
+                            <div class="contentAccomodation flex-down">
+                                <div>
+                                    <h3 class="bold">Gran Vía</h3>
+                                    <p>Stay from $68/night</p>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <i class="fa-solid fa-star stars"></i>
+                                    <span><i class="fa-solid fa-star starDisable"></i></span>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a class="accomodationsWidget flex">
-                        <img src="./img/accomodation/Gran-Vía.jpg" class="accommodationRightImg" alt="Gran-Vía">
-                        <div class="contentAccomodation flex-down">
-                            <div>
-                                <h3 class="bold">Gran Vía</h3>
-                                <p>Stay from $68/night</p>
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <i class="fa-solid fa-star stars"></i>
-                                <span><i class="fa-solid fa-star starDisable"></i></span>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+
+                    </article>
                 </div>
             </aside>
 
         </section>
 
     </main>
+
+    <section id="activities">
+        <h2 class="bold">Discover all activities around here</h2>
+        <div class="flex">
+            <article>
+            <a href="#">
+                <img src="./img/activities/Water.jpg" alt="Water">
+                <p>Water activities</p>
+            </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./img/activities/mountain.jpg" alt="mountain">
+                    <p>Moutain activities</p>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./img/activities/Nature.jpg" alt="nature">
+                    <p>Nature activities</p>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./img/activities/City.jpg" alt="city">
+                    <p>City activities</p>
+                </a>
+            </article>
+        </div>
+
+
+    </section>
 
     <footer>
         <div class="flex">
