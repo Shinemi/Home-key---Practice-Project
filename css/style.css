@@ -75,6 +75,13 @@ header img{
 }
 
 
+header nav a:hover{
+    border-top: 1px solid var(--red);
+    padding-top: 40px;
+    transition: all 0.2s  ease;
+}
+
+
 .burger-menu {
     display: none;
 }
@@ -150,6 +157,7 @@ h1{
     padding: 8px 15px;
     border-radius: 0 7px 7px 0;
     border: none;
+    cursor: pointer;
 }
 
 #search-input{
@@ -208,6 +216,32 @@ h1{
     margin: 40px 0px;
 }
 
+.Recommended{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 5px ;
+    border-radius: 4px;
+    font-size: 13px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.Popular{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 5px ;
+    border-radius: 4px;
+    font-size: 13px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 .accomodationsWidget{
     cursor: pointer;    
     background-color: var(--white);
@@ -216,6 +250,7 @@ h1{
     box-shadow: 0 2px 15px #C1C1C1;
     width: fit-content;
     flex: 1 0 27%;
+    position: relative;
 
     &:hover a{
         color: var(--black);
@@ -279,7 +314,7 @@ h1{
 #activities{
     max-width: 1440px;
     margin: auto;
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 #activities h2{
@@ -290,7 +325,20 @@ h1{
     flex: 1 0 25%;
     padding: 50px 20px;
     text-align: center;
-    box-shadow: 0 5 100 var(--grey);
+   
+}
+
+#activities article a{
+    height: fit-content;
+    box-shadow: 0px 5px 100px var(--grey);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    font-weight: bold;
+
+    &:hover{
+        color: var(--black);
+    }
 }
 
 #activities p{
@@ -303,4 +351,76 @@ h1{
     height: 380px;
     object-fit: cover;
     border-radius: 12px 12px 0px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px){
+    #accomodations{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #accomodations aside{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    #accomodations .accomodationsWidget{
+        width: 100%;
+    }
+
+    #accomodations .accommodationRightImg {
+        flex: 0.5 0 25%;
+    }
+
+    #activities{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #activities div{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #activities article{
+        flex: 1 0 50%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav{
+        padding-top: 50px;
+    }
+
+    #search-input{
+        width: 150px;
+    }
+
+    #filterDiv{
+        flex-wrap: wrap;
+    }
+    
+    #accomodations>div,#accomodations>aside{
+        padding: 0px 20px;
+    }
+
+    aside {
+        order: -1;
+    }
+
+    footer div{ 
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #activities article {
+        flex: 1 0 100%;
+    }
 }
