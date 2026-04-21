@@ -227,6 +227,7 @@ h1{
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 15;
 }
 
 .Popular{
@@ -240,6 +241,8 @@ h1{
     position: absolute;
     top: 10px;
     left: 10px;
+    z-index: 15;
+
 }
 
 .accomodationsWidget{
