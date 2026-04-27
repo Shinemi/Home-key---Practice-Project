@@ -76,9 +76,9 @@ header img{
 
 
 header nav a:hover{
-    border-top: 1px solid var(--red);
-    padding-top: 40px;
-    transition: all 0.2s  ease;
+    border-top: 2px solid var(--red);
+    padding-top: 48px;
+    transition: all 0.2s  ease-in-out;
 }
 
 
@@ -147,7 +147,8 @@ h1{
 #search-logo{
     color: var(--white);
     background-color: #f60303;
-    padding: 8px 6px;
+    padding: 11px 0px;
+    width: 40px;
     border-radius: 7px 0 0 7px;
 }
 
@@ -290,6 +291,7 @@ h1{
     &:hover{
         transform: scale(1.02);
         transition: all 0.3s ease-in-out;
+        /* a changer */
     }
 }
 .contentAccomodation{
@@ -301,7 +303,7 @@ h1{
 #accomodations #loadMore{
     background-color: var(--lightgrey);    
     justify-content: left;
-    margin: 40px;
+    margin: 40px 2px;
     border-radius: 0px 0px 12px 12px ;
 }
 
@@ -344,7 +346,7 @@ h1{
     }
 }
 
-#activities p{
+#activities h3{
     padding: 15px 0px;
     border-radius: 0px 0px 12px 12px;
 }
@@ -402,8 +404,27 @@ h1{
         padding-top: 50px;
     }
 
+    header nav ul{
+        border-bottom: 1px solid var(--lightgrey);
+        padding: 20px ;
+
+        &:hover{
+            padding: 20px 0px;
+        }
+    }
+
+    header nav a{
+        padding: 20px;
+    }
+
+    header nav a:hover{
+        border-top: none;
+        border-bottom: 1px solid var(--red);
+        transition: none;
+    }
+
     #search-input{
-        width: 150px;
+        width: 100%;
     }
 
     #filterDiv{
