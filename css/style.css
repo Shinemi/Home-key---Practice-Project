@@ -402,25 +402,36 @@ h1{
 
     header nav{
         padding-top: 50px;
+        width: -webkit-fill-available;
     }
 
     header nav ul{
-        border-bottom: 1px solid var(--lightgrey);
         padding: 20px ;
-
+        width: -webkit-fill-available;
+        justify-content: space-around;
+        gap: 0px;
         &:hover{
-            padding: 20px 0px;
+            padding: 20px ;
         }
     }
 
     header nav a{
-        padding: 20px;
+        border-bottom: 1px solid var(--lightgrey);
+        display: block;
+        padding: 0;
+        padding-bottom: 15px;
+    }
+
+    header nav li {
+        width: -webkit-fill-available;
+        text-align: center;
     }
 
     header nav a:hover{
         border-top: none;
         border-bottom: 1px solid var(--red);
         transition: none;
+        padding-top: 0;
     }
 
     #search-input{
